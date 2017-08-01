@@ -450,7 +450,7 @@ config("compiler") {
     cflags_cc += [ "-std=c++11" ]
   }
 
-  if (is_mac || is_linux) {
+  if (is_mac || (is_linux && target_os == "linux")) {
     cflags_cc += [ "-stdlib=libc++" ]
     ldflags += [ "-stdlib=libc++" ]
   }
