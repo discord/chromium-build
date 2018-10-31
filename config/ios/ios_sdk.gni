@@ -166,5 +166,3 @@ if (ios_enable_code_signing && !use_ios_simulator) {
     }
   }
 }
-
-assert(xcode_version_int >= 900, "Xcode 9 is required.")
