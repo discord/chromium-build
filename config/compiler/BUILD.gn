@@ -544,7 +544,7 @@ config("compiler") {
     }
   }
 
-  if (is_mac || (is_linux && target_os == "linux")) {
+  if (is_mac) {
     cflags_cc += [ "-stdlib=libc++" ]
     ldflags += [ "-stdlib=libc++" ]
   }
